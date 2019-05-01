@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Cards"
+             x:Class="Cards.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="fondo_.jpg">
+    <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical" Margin="40,20">
+
+            <Image Source="SplashPage.jpg"
+               WidthRequest="300"
+               HeightRequest="250"/>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="usericon.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="User_Entry" 
+                       TextColor="White" 
+                       Placeholder="Usuario" 
+                       HeightRequest="45" 
+                       PlaceholderColor="White" 
+                       Keyboard="Email" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                      
+                       />
+            </StackLayout>
+            <Label/>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="lock.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="Password_Entry" 
+                       TextColor="White" 
+                       Placeholder="Contraseña" 
+                       PlaceholderColor="White" 
+                       IsPassword="True" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                       />
+            </StackLayout>
+            <Label/>
+            <Label Text="¿Olvidaste tu contraseña?" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+            <Label/>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button x:Name="ButtonLogin" 
+                            BackgroundColor="#0e72c7"  
+                            Text="Entrar" 
+                            Clicked="ButtonLogin_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button x:Name="ButtonRegistrarse" 
+                            Text="Registrarse"  
+                            BackgroundColor="#ea1e65" 
+                            Clicked="ButtonRegistrarse_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cards.View.Dashboard"
+             NavigationPage.HasBackButton="false"
+             Title="Saldo" >
+    <!--<ContentPage.Content>
+        <StackLayout Spacing="10" x:Name="layout">
+           
+            <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+                <Image Source="CardS.png" 
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Label AbsoluteLayout.LayoutBounds=".10,.18,60,30" 
+               AbsoluteLayout.LayoutFlags="XProportional,YProportional" 
+               BackgroundColor="#C3E9FB"  
+               HorizontalTextAlignment="Center" 
+               TextColor="#F00DCB" 
+               Text="1111" 
+               FontAttributes="Bold" />
+                <Label AbsoluteLayout.LayoutBounds=".35,.18,60,30" 
+               AbsoluteLayout.LayoutFlags="XProportional,YProportional" 
+               BackgroundColor="#C3E9FB"  
+               HorizontalTextAlignment="Center" 
+               TextColor="#F00DCB" 
+               Text="2222" 
+               FontAttributes="Bold" />
+                <Label AbsoluteLayout.LayoutBounds=".60,.18,60,30" 
+               AbsoluteLayout.LayoutFlags="XProportional,YProportional" 
+               BackgroundColor="#C3E9FB"  
+               HorizontalTextAlignment="Center" 
+               TextColor="#F00DCB" 
+               Text="3333" 
+               FontAttributes="Bold" />
+                <Label AbsoluteLayout.LayoutBounds=".85,.18,60,30" 
+               AbsoluteLayout.LayoutFlags="XProportional,YProportional" 
+               BackgroundColor="#C3E9FB"  
+               HorizontalTextAlignment="Center" 
+               TextColor="#F00DCB" 
+               Text="4444" 
+               FontAttributes="Bold" />
+            </AbsoluteLayout>
+            <BoxView Color="Green" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" />
+           
+        </StackLayout>
+    </ContentPage.Content>-->
+
+    <StackLayout>
+        <Label x:Name="Saldocard" TextColor="Black"/>
+    </StackLayout>
+    <!--<ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical" Margin="40,20">
+            <Label/>
+            <Label Text="Saldo" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Image Source="CardS.png"
+               WidthRequest="300"
+               HeightRequest="250"/>
+            <Label Text="Movimientos" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <ListView BackgroundColor="#FFF8F8" InputTransparent="False" IsVisible="True" HeightRequest="250">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>-->
+</ContentPage>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cards.View.CheckIn"
+             BackgroundImage="fondo_.jpg">
+    <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical" Margin="40,20">
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="email.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="Email_Entry" 
+                       TextColor="White" 
+                       Placeholder="Email" 
+                       HeightRequest="45" 
+                       PlaceholderColor="White" 
+                       Keyboard="Email" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                      
+                       />
+            </StackLayout>
+            <Label/>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="lock.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="Password_Entry" 
+                       TextColor="White" 
+                       Placeholder="Contraseña" 
+                       PlaceholderColor="White" 
+                       IsPassword="True" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                       />
+            </StackLayout>
+
+            <Image Source="mslogin.jpg"
+               WidthRequest="300"
+               HeightRequest="250"/>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="lock.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="ConfirmationPassword_Entry" 
+                       TextColor="White" 
+                       Placeholder="Confirmar Contraseña" 
+                       PlaceholderColor="White" 
+                       IsPassword="True" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                       />
+            </StackLayout>
+            <Label/>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="Transparent" Orientation="Horizontal">
+                <Image Source="card.png" 
+                   WidthRequest="25" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+
+                <Entry x:Name="card_Entry" 
+                       TextColor="White" 
+                       Placeholder="Tarjeta" 
+                       HeightRequest="45" 
+                       PlaceholderColor="White" 
+                       Keyboard="Numeric" 
+                       FontSize="18" 
+                       HorizontalTextAlignment="Start"
+                       WidthRequest="250"
+                       />
+            </StackLayout>
+
+
+            <Button Margin="0,10" 
+                        Text="Registrarse" 
+                        BackgroundColor="#f65151" 
+                        TextColor="White" 
+                        FontSize="18" 
+                        Clicked="Button_ClickedCheckin"/>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
